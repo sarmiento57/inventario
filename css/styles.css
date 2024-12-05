@@ -1,0 +1,24 @@
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.main-container{
+    height: 100%; /* modifica la altura del contenedor principal */
+    width: 100%; /* modifica el ancho del contenedor principal */
+    display: flex; /* el display flex permite alinear los elementos hijos */ 
+    justify-content: center; /* centra los elementos hijos horizontalmente */
+    align-items: center; /* centra los elementos hijos verticalmente */
+}
+
+.main-container > .login, /* modifica el ancho del contenedor de la clase login */
+.main-container > .hero-body{ /* modifica el ancho del contenedor de la clase hero-body */
+    height: auto; /* modifica la altura del contenedor */
+    width: 100%; /* modifica el ancho del contenedor */
+    max-width: 400px; /* modifica el ancho máximo del contenedor */
+    min-width: 300px; /* modifica el ancho mínimo del contenedor */
+}
+
+.form-inline{ /* modifica el ancho del contenedor de la clase form-inline */
+    display: inline-flex; /* el display inline-flex permite alinear los elementos hijos en línea */
+}
